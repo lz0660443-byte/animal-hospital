@@ -1,0 +1,280 @@
+body {
+  margin: 0;
+  font-family: "Helvetica", "Arial", sans-serif;
+  background: #f9fafb;
+  color: #333;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* ヘッダー */
+header {
+  background: #6fc3b2;
+  color: white;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* メインビジュアル */
+.hero {
+  background: url("https://images.unsplash.com/photo-1558788353-f76d92427f16") center/cover;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-text {
+  background: rgba(255,255,255,0.85);
+  padding: 30px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+/* 情報ボックス */
+.info {
+  display: flex;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.box {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+/* About */
+.about {
+  margin: 60px auto;
+  text-align: center;
+}
+
+.about h2 {
+  color: #6fc3b2;
+}
+
+/* フッター */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+/* スマホ対応 */
+@media (max-width: 700px) {
+  .info {
+    flex-direction: column;
+  }
+
+  header .container {
+    flex-direction: column;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+}
+.page-title {
+  background: #eaf7f4;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.page-title h2 {
+  color: #6fc3b2;
+  margin-bottom: 10px;
+}
+
+.medical-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin: 50px auto;
+}
+
+.medical-box {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.medical-box h3 {
+  color: #6fc3b2;
+  margin-bottom: 10px;
+}
+
+/* スマホ対応 */
+@media (max-width: 700px) {
+  .medical-list {
+    grid-template-columns: 1fr;
+  }
+}
+.staff-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 50px auto;
+  max-width: 700px;
+}
+
+.staff-card {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0,0,0,0.05);
+}
+
+.staff-photo {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  border: 4px solid #6fc3d2;
+}
+
+
+.role {
+  color: #6fc3b2;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* スマホ対応 */
+@media (max-width: 700px) {
+  .staff-list {
+    grid-template-columns: 1fr;
+  }
+}
+.price-table {
+  margin: 50px auto;
+}
+
+.price-table table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.price-table th,
+.price-table td {
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+}
+
+.price-table th {
+  background: #6fc3b2;
+  color: white;
+}
+
+.note {
+  margin-top: 20px;
+  font-size: 0.9em;
+  color: #666;
+}
+
+.access-area {
+  display: flex;
+  gap: 30px;
+  margin: 50px auto;
+}
+
+.access-info {
+  flex: 1;
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.access-map {
+  flex: 1;
+}
+
+.access-map iframe {
+  width: 100%;
+  height: 350px;
+  border: 0;
+  border-radius: 15px;
+}
+
+/* スマホ対応 */
+@media (max-width: 700px) {
+  .access-area {
+    flex-direction: column;
+  }
+}
+
+.info-form {
+  max-width: 600px;
+  margin: 50px auto;
+}
+
+.info-form form {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.info-form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.info-form input,
+.info-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.contact-form button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background: #6fc3b2;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.info-form button:hover {
+  background: #5ab0a0;
+}
